@@ -1,0 +1,12 @@
+Cole nesta pasta o instalador OFFLINE x64 do WebView2 Runtime, com o nome exato:
+
+MicrosoftEdgeWebView2RuntimeInstallerX64.exe
+
+Página oficial da Microsoft:
+https://developer.microsoft.com/en-us/microsoft-edge/webview2/
+
+Selecione: Evergreen Standalone Installer -> x64.
+Não use Evergreen Bootstrapper, pois ele depende de internet no computador cliente.
+
+O arquivo é obtido UMA VEZ no computador de desenvolvimento e incorporado ao setup.
+O script CRIAR_INSTALADOR.ps1 valida a assinatura digital do executável Microsoft.

@@ -1,0 +1,23 @@
+
+# Dependências
+node_modules/
+.venv/
+venv/
+
+# Compilações
+dist/
+build/
+dist_instalador/
+*.exe
+
+# Python
+__pycache__/
+*.pyc
+
+# Arquivos locais e sensíveis
+.env
+.env.*
+!.env.example
+
+# Editor
+.vscode/

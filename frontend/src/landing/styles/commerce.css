@@ -1,0 +1,246 @@
+
+/* Produtos */
+.catalog-message {
+  color: var(--cream-muted);
+  text-align: center;
+  margin: 30px 0;
+}
+
+.catalog-price {
+  display: block;
+  color: var(--gold-light);
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin: 14px 0;
+}
+
+.catalog-duration {
+  color: var(--cream-muted);
+  font-size: .85rem;
+  margin-bottom: 14px;
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+  margin-top: 45px;
+}
+
+.product-landing-card {
+  background: var(--bg-2);
+  border: 1px solid rgba(212, 175, 90, .35);
+  border-radius: 16px;
+  overflow: hidden;
+  height: 100%;
+  transition: transform .3s, border-color .3s;
+}
+
+.product-landing-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--gold);
+}
+
+.product-landing-image {
+  height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #181511;
+  color: var(--gold);
+}
+
+.product-landing-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  padding: 15px;
+}
+
+.product-landing-body {
+  padding: 24px;
+}
+
+.product-category {
+  color: var(--gold);
+  text-transform: uppercase;
+  font-size: .7rem;
+  letter-spacing: 2px;
+}
+
+.product-landing-body h3 {
+  font-family: var(--font-title);
+  color: var(--cream);
+  font-size: 1.15rem;
+  margin: 12px 0;
+}
+
+.product-description {
+  color: var(--cream-muted);
+  font-size: .9rem;
+  min-height: 48px;
+}
+
+.product-whatsapp {
+  width: 100%;
+  font-size: .78rem;
+  padding: 14px 12px;
+  margin-top: 12px;
+}
+
+/* Agendamento */
+.booking-wrapper {
+  max-width: 880px;
+  margin: 45px auto 0;
+  padding: 35px;
+}
+
+.booking-heading {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  color: var(--gold);
+  margin-bottom: 28px;
+}
+
+.booking-heading h3 {
+  font-family: var(--font-title);
+  font-size: 1.3rem;
+  margin: 0;
+}
+
+.booking-heading p {
+  color: var(--cream-muted);
+  margin: 6px 0 0;
+  font-size: .9rem;
+}
+
+.booking-form {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.booking-form label {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  color: var(--cream);
+  font-size: .9rem;
+}
+
+.booking-form input,
+.booking-form select,
+.booking-form textarea {
+  width: 100%;
+  min-height: 48px;
+  padding: 12px 14px;
+  background: #100e0c;
+  border: 1px solid #735a32;
+  border-radius: 8px;
+  color: var(--cream);
+  font: inherit;
+  color-scheme: dark;
+}
+
+.booking-form textarea {
+  resize: vertical;
+}
+
+.booking-form input:focus,
+.booking-form select:focus,
+.booking-form textarea:focus {
+  outline: 1px solid var(--gold);
+  border-color: var(--gold);
+}
+
+.booking-full,
+.booking-notice {
+  grid-column: 1 / -1;
+}
+
+.booking-notice {
+  color: var(--gold-light);
+  font-size: .85rem;
+}
+
+.booking-error {
+  color: #ff9999;
+  font-size: .9rem;
+}
+
+.booking-submit {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.booking-submit small {
+  color: var(--cream-muted);
+}
+
+.booking-submit button:disabled {
+  opacity: .5;
+  cursor: not-allowed;
+}
+
+.booking-success {
+  text-align: center;
+  color: var(--cream);
+  padding: 20px;
+}
+
+.booking-success h3 {
+  color: var(--gold-light);
+}
+
+.booking-success .btn {
+  margin-top: 18px;
+}
+
+@media (max-width: 900px) {
+  .products-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 600px) {
+  .products-grid,
+  .booking-form {
+    grid-template-columns: 1fr;
+  }
+
+  .booking-wrapper {
+    padding: 20px;
+  }
+
+  .booking-heading {
+    align-items: flex-start;
+  }
+
+  .product-landing-image {
+    height: 230px;
+  }
+
+  .booking-submit button {
+    width: 100%;
+  }
+}
+@media (min-width: 901px) {
+  .nav__links {
+    gap: clamp(10px, 1.3vw, 22px);
+  }
+
+  .nav__link {
+    font-size: .7rem;
+    letter-spacing: .08em;
+  }
+}
+
+@media (min-width: 901px) and (max-width: 1250px) {
+  .nav__cta {
+    padding: 10px 12px;
+    font-size: .68rem;
+  }
+}

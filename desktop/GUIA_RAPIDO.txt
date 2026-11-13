@@ -1,0 +1,24 @@
+BARBEARIA BRENNER — DESKTOP OFFLINE (prototipo)
+
+1) Abra esta pasta no VS Code (Windows).
+2) Terminal PowerShell:
+   py -m venv .venv
+   .\.venv\Scripts\Activate.ps1
+   pip install -r desktop\requirements.txt
+3) Compile React:
+   cd frontend
+   npm ci
+   npm run build:desktop
+   cd ..
+4) Inicie:
+   python -m desktop.app
+5) Informe a URL do Django, EXEMPLO: https://seu-site.com/api
+6) Selecione Administracao ou Balcao e entre pela primeira vez ONLINE.
+7) Visite a aba Sincronizacao para conferir os dados baixados.
+8) Desconecte internet, feche/abra app, teste login offline e uma venda.
+9) Reconecte, clique Sincronizar agora e confira no Django.
+
+Para gerar Windows .exe (no Windows):
+   .\desktop\GERAR_EXE_WINDOWS.ps1
+
+ANTES DE PRODUCTION: Leia README.md, sobretudo limitacoes de conflitos e lancamentos.
